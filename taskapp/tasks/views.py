@@ -6,7 +6,8 @@ from django.views.generic.detail import DetailView
 from .models import Task
 
 def index(request):
-    return HttpResponse('Hello World! This came from the index view.')
+    return render(request, 'index.html')
+    # return HttpResponse('Hello World! This came from the index view.')
 
 def task_list(request):
     tasks = Task.objects.all()
