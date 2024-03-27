@@ -43,7 +43,85 @@
         <br>
         Duis iaculis congue euismod. Nunc elementum sem sed erat efficitur elementum. <br>
 
-        <img src="{% static '350x150.png' %}">
+        <img src="{% static '350x150.png' %}" border="10">
 
+        <ul>
+            <li>strawberrry
+                <ul>
+                    <li>choco stawberry</li>
+                    <li>milk strawberry</li>
+                    <li>strawberry candy sprinkle</li>
+                </ul>
+            </li>
+            <li>orange</li>
+            <li>mango</li>
+        </ul>
+
+        <ol>
+            <li>strawberry</li>
+            <li>orange</li>
+            <li>mango</li>
+        </ol>
+
+        <table border="10" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Month</th>
+                <th>Rent</th>
+                <th>Utilities</th>
+                <th>Groceries</th>
+                <th>Eating Out</th>
+                <th>Entertainment</th>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>$1500</td>
+                <td>$150</td>
+                <td>$350</td>
+                <td>$100</td>
+                <td>$50</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="10" cellpadding="10" cellspacing="0">
+            <tr>
+                <th></th>
+                <th>Month</th>
+                <th>Rent</th>
+                <th colspan="2">Utilities</th>
+                <th>Groceries</th>
+                <th>Eating Out</th>
+                <th>Entertainment</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Fall</td>
+                <td>June</td>
+                <td>$1500</td>
+                <td>$100</td>
+                <td>$50</td>
+                <td>$350</td>
+                <td>$100</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>$1500</td>
+                <td>$100</td>
+                <td>$50</td>
+                <td>$350</td>
+                <td>$100</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>$1500</td>
+                <td>$100</td>
+                <td>$50</td>
+                <td>$350</td>
+                <td>$100</td>
+                <td>$50</td>
+            </tr>
+        </table>
     </body>
 </html>
