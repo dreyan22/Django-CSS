@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My First CSS</title>
+        <style>
+            img {
+                width: 100px;
+                border-radius: 50px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .username {
+                font-weight: bold;
+            }
+
+            /* apply to all */
+            /* p {
+                font-weight: bold;
+            } */
+        </style>
+    </head>
+    <body>
+        {% load static %}
+        <img src="{% static 'chutiw.png' %}" alt="A picture of bb">
+        <p class="username">@dreyan22</p>
+        <p>Hello! I am Adrian!</p>
+    </body>
+</html>

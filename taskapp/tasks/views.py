@@ -9,6 +9,9 @@ def index(request):
     return render(request, 'index.html')
     # return HttpResponse('Hello World! This came from the index view.')
 
+def infileCSS(request):
+    return render(request, 'infile.html')
+
 def task_list(request):
     tasks = Task.objects.all()
     ctx = {

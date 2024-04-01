@@ -1,13 +1,14 @@
 from django.urls import path
 
-from .views import task_list, task_detail, index, TaskListView,TaskDetailView
+from .views import task_list, task_detail, index, TaskListView,TaskDetailView, infileCSS
 
 urlpatterns = [
     # path('', task_list, name="task_list"),
     path('list', TaskListView.as_view(), name="task_list"),
     # path('<int:pk>/detail', task_detail, name="task_detail"),
     path('<int:pk>/detail', TaskDetailView.as_view(), name="task_detail"),
-    path('', index, name='index')
+    path('index', index, name='index'),
+    path('infile', infileCSS, name='infileCSS')
 ]
 
 app_name = 'tasks'
